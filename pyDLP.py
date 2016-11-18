@@ -1,27 +1,24 @@
 #!/usr/bin/python2.7
 import commands
-import numpy as np
 from random import randint
 from ast import literal_eval
 from primefac import primefac
 from math import exp, sqrt, log
-from scipy.sparse import csr_matrix
-from scipy.sparse.linalg import spsolve
-
-# L complexity notation
-def L(x): return exp(log(x)*sqrt(log(log(x))))
 
 # Note: This script requires SageMath
 # (run with Python, not Sage)
 # https://www.sagemath.org/
 
 # parameters:
-#From Hoffstein Pipher Silverman:
+# (from Hoffstein Pipher Silverman p.167)
 g = 37
 h = 211
 p = 18443
 B = 5
 max_equations = 6
+
+# L complexity notation
+def L(x): return exp(log(x)*sqrt(log(log(x))))
 
 # determine if n is B-smooth (uses fast factoring)
 def is_Bsmooth(b, n):
