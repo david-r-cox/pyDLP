@@ -1,5 +1,5 @@
 # Author
-This repository is based on [David's](https://github.com/davidcox143) pyDLP repository. I am uploading algorithms when I have to write a DLP algorithm.
+This repository is based on [David's](https://github.com/davidcox143) pyDLP repository for Index Calculus implementation.
 
 # pyDLP
 Python implementation of the index calculus method for solving discrete logarithms.
